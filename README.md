@@ -20,7 +20,7 @@ get_template_part( 'blocks/post/comments' );
 
 ## Add multiple values
 
-Usage : bea_add_template_vars( {template_slug}, {key}, {values} );
+Usage : bea_add_template_vars( {template_slug}, array( {key1} => {value1}, {key2} => {value2}, {etc} ) );
 
 ```
 // Post tools
@@ -49,10 +49,10 @@ if ( empty ( $post_m ) ) {
 
 ## Get multiple values
 
-Usage : bea_get_template_vars( {template_slug}, {key}, {values} );
+Usage : bea_get_template_vars( {template_slug}, array( {key1} => {value1}, {key2} => {value2}, {etc} ) );
 
 ```
-$tools  = bea_get_template_vars( 'blocks/post/comments', 'tools' );
+$tools  = bea_get_template_vars( 'blocks/post/comments', array( 'block_title', 'post_m', 'number_items' ) );
 $title  = $tools['block_title'];
 $post_m = $tools['post_m'];
 $max_items = $tools['number_items'];
