@@ -10,16 +10,19 @@ You can pass a single value or an array of multiple ones.
 
 ## Add single value
 
-Usage : bea_add_template_var( {template_slug}, {key}, {value} );
+Usage :  bea_add_template_var( {template_slug}, {key}, {value} );
 
+```
 // Post comments
 bea_add_template_var( 'blocks/post/comments', 'post_m', $post_m );
 get_template_part( 'blocks/post/comments' );
+```
 
 ## Add multiple values
 
 Usage : bea_add_template_vars( {template_slug}, {key}, {values} );
 
+```
 // Post tools
 bea_add_template_vars( 'blocks/post/tools', 'tools', array (
   'post_m'        => $post_m,
@@ -27,6 +30,7 @@ bea_add_template_vars( 'blocks/post/tools', 'tools', array (
   'number_items'  => count( $collection ),
 ) );
 get_template_part( 'blocks/post/tools' );
+```
 
 # How to get var(s)
 Aswell, you can get a single value or multiple ones.
@@ -35,17 +39,21 @@ Aswell, you can get a single value or multiple ones.
 
 Usage : bea_get_template_var( {template_slug}, {key}, {value} );
 
+```
 $post_m = bea_get_template_var( 'blocks/post/comments', 'post_m' );
 if ( empty ( $post_m ) ) {
   // Leave as empty value
   return;
 }
+```
 
 ## Get multiple values
 
 Usage : bea_get_template_vars( {template_slug}, {key}, {values} );
 
+```
 $tools  = bea_get_template_vars( 'blocks/post/comments', 'tools' );
 $title  = $tools['block_title'];
 $post_m = $tools['post_m'];
 $max_items = $tools['number_items'];
+```
