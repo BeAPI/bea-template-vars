@@ -1,9 +1,14 @@
-# BEA Template Vars
+# BEA Template Vars #
+
+## Description ##
+
 Easily pass vars through a template and reuse them.
 
 For exemple you have instantiate a model for the current post and you wanna display the post's toolbox (like, share, etc) and its comments without reinstantiate it in theses templates. When doing your get_template_part() you will have the possibility to pass to the called template the wanted PHP vars, like in this exemple, the model, or whatever.
 
 It is quite well working with ACF values when working with mulitple flexible on your templates.
+
+## Important to know ##
 
 # How to add var(s)
 You can pass a single value or an array of multiple ones.
@@ -57,3 +62,9 @@ $title  = $tools['block_title'];
 $post_m = $tools['post_m'];
 $max_items = $tools['number_items'];
 ```
+
+## Changelog ##
+
+### 0.0.1
+* 19 Aug 2016
+* Initial
