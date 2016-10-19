@@ -1,0 +1,13 @@
+{
+  "name": "bea/template-vars",
+  "description": "Easily pass vars through a template and reuse them.",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "BeAPI",
+      "email": "technique@beapi.fr"
+    }
+  ],
+  "type": "wordpress-muplugin"
+}
