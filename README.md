@@ -66,5 +66,9 @@ $max_items = $tools['number_items'];
 ## Changelog ##
 
 ### 0.0.1
+* 19 Oct 2016
+* Add composer.json file
+
+### 0.0.1
 * 19 Aug 2016
 * Initial
