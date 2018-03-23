@@ -29,7 +29,7 @@ Usage : bea_add_template_vars( {template_slug}, array( {key1} => {value1}, {key2
 
 ```
 // Post tools
-bea_add_template_vars( 'blocks/post/tools', 'tools', array (
+bea_add_template_vars( 'blocks/post/tools', array (
   'post_m'        => $post_m,
   'block_title'   => get_sub_field( 'title' ),
   'number_items'  => count( $collection ),
